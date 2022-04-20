@@ -1,0 +1,256 @@
+<resources>
+    <string name="app_name">SpyFall</string>
+    <string name="title_activity_steptwo">steptwo</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="title_activity_stepthree">stepthree</string>
+
+    <string-array name="Player_names">
+        <item>Игрок 1</item>
+        <item>Игрок 2</item>
+        <item>Игрок 3</item>
+        <item>Игрок 4</item>
+        <item>Игрок 5</item>
+        <item>Игрок 6</item>
+        <item>Игрок 7</item>
+        <item>Игрок 8</item>
+        <item>Игрок 9</item>
+        <item>Игрок 10</item>
+        <item>Игрок 11</item>
+        <item>Игрок 12</item>
+
+    </string-array>
+    <string name="Rules">
+
+        \n\tИгровая партия состоит из последовательности
+        коротких раундов. В каждом раунде игроки оказываются в какой-то локации.
+        Один неизбежно оказывается шпионом, который не знает, где находится.
+       \n\tЕго задача — разговорить других игроков, определить локацию и не разоблачить себя.
+        Каждый нешпион в свою очередь пытается обтекаемо дать понять, что знает, где находится,
+        и поэтому не является шпионом, при этом не дав подсказку шпиону.
+
+        <b>\n\tХод игры:\n\t</b>
+        \tИгроки поочередно задают вопросы друг другу и отвечают на них. После того как закончился 1 круг,
+        игроки дальше могут продолжать спрашивать с той же очередностью, или, основываясь на своих подозрениях изменить
+        порядок опроса.
+
+       <b>\n\tЗавершение игры:</b>
+        \tИгра заканчивается, когда голосованием находят всех шпионов. Если был выбран мирный игрок, выигрывает
+        шпион или команда шпионов.
+        \n\tШпион также в любом моменте хода может называть название локации. Если он угадывает - выигрывает,если
+        ошибается - команда игроков также побеждает.
+
+    </string>
+
+    <string name="Rules_ENG">
+
+      \n\tA game party consists of the sequence
+        continues rounds. In each round they end up in some location.
+        One of the players turns out to be a spy who does not know where he is.
+       \n\tHis job is to talk to other players, determine the location, and not expose himself.
+        Each non-spy, tries to make it clear in a streamlined way that he knows where he is,
+        to show that he is not a spy without giving a clue to the spy.
+
+        <b>\n\tGame progress:\n</b>
+        \tPlayers take turns asking each other questions and answering them. After 1 round is over,
+        players can then continue to ask in the same order, or, based on their suspicions, change
+        poll order.
+
+       <b>\n\tGame over:\n</b>
+        \tThe game ends when all spies are found by voting. If a peaceful player was chosen, wins
+        spy or team of spies.
+        \n\tThe spy can also name a location at any time during his turn. If he guesses correctly, he wins if
+        makes a mistake - the team of players also wins.
+    </string>
+
+
+    <string-array name="Player_names_ENG">
+        <item>Player 1</item>
+        <item>Player 2</item>
+        <item>Player 3</item>
+        <item>Player 4</item>
+        <item>Player 5</item>
+        <item>Player 6</item>
+        <item>Player 7</item>
+        <item>Player 8</item>
+        <item>Player 9</item>
+        <item>Player 10</item>
+        <item>Player 11</item>
+        <item>Player 12</item>
+    </string-array>
+
+
+    <string-array name="Language">
+
+        <item>Русский</item>
+        <item>English</item>
+    </string-array>
+
+    <string-array name="LocationNames">
+        <item>Cтройплощадка</item>
+        <item>Метро</item>
+        <item>Парламент</item>
+        <item>Стадион</item>
+        <item>Музей</item>
+        <item>Дом престарелых</item>
+        <item>Экскурсионный автобус</item>
+        <item>Рок-концерт</item>
+        <item>Шахта</item>
+        <item>Свадьба</item>
+        <item>Заправочная станция</item>
+        <item>Библиотека</item>
+        <item>Шоколадная фабрика</item>
+        <item>Джаз-бэнд</item>
+        <item>Виноградник</item>
+        <item>Порт</item>
+        <item>Автогонки</item>
+        <item>Тюрьма</item>
+        <item>Выставка кошек</item>
+        <item>Орбитальная станция</item>
+        <item>Казино</item>
+        <item>Цирк</item>
+        <item>Университет</item>
+        <item>Супермаркет</item>
+        <item>Спа-салон</item>
+        <item>Театр</item>
+        <item>Пиратский корабль</item>
+        <item>Пассажирский корабль</item>
+        <item>Подводная лодка</item>
+        <item>Посольство</item>
+        <item>Полицейский участок</item>
+        <item>Самолет</item>
+        <item>Ресторан</item>
+        <item>Отель</item>
+        <item>Воинская часть</item>
+        <item>Церковь</item>
+        <item>Школа</item>
+        <item>Пляж</item>
+        <item>Овощебаза</item>
+        <item>Больница</item>
+        <item>Банк</item>
+        <item>Станция техобслуживания</item>
+    </string-array>
+
+
+    <string-array name="LocationNames_ENG">
+        <item>Construction site</item>
+        <item>Metro</item>
+        <item>Parliament</item>
+        <item>Stadium</item>
+        <item>Museum</item>
+        <item>Nursing home</item>
+        <item>Sightseeing Bus</item>
+        <item>Rock concert</item>
+        <item>Mine</item>
+        <item>Wedding</item>
+        <item>Gas station</item>
+        <item>Library</item>
+        <item>Chocolate Factory</item>
+        <item>Jazz band</item>
+        <item>Vineyard</item>
+        <item>Port</item>
+        <item>Car Racing</item>
+        <item>Prison</item>
+        <item>Cat Show</item>
+        <item>Orbital Station</item>
+        <item>Casino</item>
+        <item>Circus</item>
+        <item>University</item>
+        <item>Supermarket</item>
+        <item>Spa</item>
+        <item>Theatre</item>
+        <item>Pirate Ship</item>
+        <item>Passenger ship</item>
+        <item>Submarine</item>
+        <item>Embassy</item>
+        <item>Police station</item>
+        <item>Aircraft</item>
+        <item>Restaurant</item>
+        <item>Hotel</item>
+        <item>Military unit</item>
+        <item>Church</item>
+        <item>School</item>
+        <item>Beach</item>
+        <item>Vegetable store</item>
+        <item>Hospital</item>
+        <item>Bank</item>
+        <item>Service Station</item>
+    </string-array>
+
+    <string-array name="Dop_loc">
+        <item>Локация 1</item>
+        <item>Локация 2</item>
+        <item>Локация 3</item>
+        <item>Локация 4</item>
+        <item>Локация 5</item>
+        <item>Локация 6</item>
+        <item>Локация 7</item>
+        <item>Локация 8</item>
+        <item>Локация 9</item>
+        <item>Локация 10</item>
+        <item>Локация 11</item>
+        <item>Локация 12</item>
+        <item>Локация 13</item>
+        <item>Локация 14</item>
+        <item>Локация 15</item>
+        <item>Локация 16</item>
+        <item>Локация 17</item>
+        <item>Локация 18</item>
+        <item>Локация 19</item>
+        <item>Локация 20</item>
+        <item>Локация 21</item>
+        <item>Локация 22</item>
+        <item>Локация 23</item>
+        <item>Локация 24</item>
+        <item>Локация 25</item>
+        <item>Локация 26</item>
+        <item>Локация 27</item>
+        <item>Локация 28</item>
+        <item>Локация 29</item>
+        <item>Локация 30</item>
+    </string-array>
+
+    <string-array name="Dop_loc_ENG">
+        <item>Location 1</item>
+        <item>Location 2</item>
+        <item>Location 3</item>
+        <item>Location 4</item>
+        <item>Location 5</item>
+        <item>Location 6</item>
+        <item>Location 7</item>
+        <item>Location 8</item>
+        <item>Location 9</item>
+        <item>Location 10</item>
+        <item>Location 11</item>
+        <item>Location 12</item>
+        <item>Location 13</item>
+        <item>Location 14</item>
+        <item>Location 15</item>
+        <item>Location 16</item>
+        <item>Location 17</item>
+        <item>Location 18</item>
+        <item>Location 19</item>
+        <item>Location 20</item>
+        <item>Location 21</item>
+        <item>Location 22</item>
+        <item>Location 23</item>
+        <item>Location 24</item>
+        <item>Location 25</item>
+        <item>Location 26</item>
+        <item>Location 27</item>
+        <item>Location 28</item>
+        <item>Location 29</item>
+        <item>Location 30</item>
+    </string-array>
+
+
+    <string name="saveicon">SaveIcon</string>
+    <string name="title_activity_rules">Rules</string>
+
+</resources>

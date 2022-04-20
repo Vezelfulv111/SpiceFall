@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    xmlns:android = "http://schemas.android.com/apk/res/android"
+    xmlns:app = "http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width = "match_parent"
+    android:layout_height = "match_parent"
+    app:layout_behavior = "@string/appbar_scrolling_view_behavior"
+    android:background="@drawable/back_for_all_screens"
+     >
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar"></include>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:layout_below="@+id/toolbar">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/ForFIRST"
+                android:layout_width="match_parent"
+                android:layout_height="220dp"
+
+                android:layout_centerHorizontal="true"
+                android:gravity="center"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/toolbar">
+
+
+                <TextView
+                    android:id="@+id/Heading1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:background="@drawable/button_1"
+                    android:text="  Основные локации"
+                    android:textColor="#FFFFFF"
+                    android:textSize="18sp" />
+
+                <ListView
+                    android:id="@+id/main_loc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="128dp"
+                    android:layout_below="@+id/Heading1"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginStart="0dp"
+                    android:layout_marginTop="0dp"
+                    android:background="@color/mr_cast_progressbar_background_light"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/Heading1" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/ForSecond"
+                android:layout_width="match_parent"
+                android:layout_height="247dp"
+                android:layout_centerHorizontal="true"
+                android:gravity="center"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/ForFIRST">
+
+
+                <TextView
+                    android:id="@+id/Heading2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/button_1"
+                    android:text="  Допольнительные локации"
+                    android:textColor="#FFFFFF"
+                    android:textSize="18sp" />
+
+                <ListView
+                    android:id="@+id/СreativLoc"
+                    android:layout_width="match_parent"
+                    android:layout_height="128dp"
+                    android:layout_below="@+id/Heading2"
+
+                    android:layout_alignParentStart="true"
+
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginStart="0dp"
+                    android:layout_marginTop="0dp"
+                    android:background="@color/mr_cast_progressbar_background_light"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/Heading2" />
+            </RelativeLayout>
+
+            <CheckBox
+                android:id="@+id/Allow_edit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:gravity="center"
+                android:minHeight="48dp"
+                android:onClick="onCheckboxClicked"
+                android:text="Редактирование списка ниже"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/ForSecond" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/constraintLayout"
+                android:layout_width="match_parent"
+                android:layout_height="61dp"
+
+                android:layout_marginTop="5dp"
+                android:foregroundGravity="center"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/Allow_edit">
+
+                <Button
+                    android:id="@+id/load_dop_loc"
+                    android:layout_width="121dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="12dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/button_1"
+                    android:gravity="center"
+                    android:text="загрузить"
+                    android:textColor="#FFFFFF"
+                    android:textColorHighlight="#FFFFFF"
+                    app:layout_constraintStart_toEndOf="@+id/enterlocText" />
+
+                <EditText
+                    android:id="@+id/enterlocText"
+                    android:layout_width="177dp"
+                    android:layout_height="match_parent"
+
+
+                    android:layout_marginStart="5dp"
+                    android:gravity="center"
+                    android:inputType="textPersonName"
+                    android:text="Локация 1"
+                    app:layout_constraintBottom_toTopOf="@+id/load_dop_loc"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <Button
+                android:id="@+id/save_main_loc"
+                android:layout_width="169dp"
+                android:layout_height="59dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/button_1"
+                android:gravity="center"
+
+                android:text="Сохранить все"
+                android:textSize="16sp" />
+
+        </LinearLayout>
+    </ScrollView>
+    </RelativeLayout>
+
